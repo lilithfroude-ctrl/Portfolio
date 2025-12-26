@@ -1,0 +1,146 @@
+// Forge Database Schema
+// Run: npx prisma db push to sync
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id            String    @id @default(cuid())
+  clerkId       String    @unique
+  email         String    @unique
+  name          String?
+  imageUrl      String?
+  
+  // Subscription & Credits
+  plan          Plan      @default(FREE)
+  credits       Float     @default(100) // Gas funding credits
+  
+  // Relations
+  projects      Project[]
+  
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+}
+
+enum Plan {
+  FREE
+  PRO
+  TEAM
+  ENTERPRISE
+}
+
+model Project {
+  id            String    @id @default(cuid())
+  name          String
+  description   String?
+  
+  // Owner
+  userId        String
+  user          User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  
+  // Chain Configuration
+  chain         String    @default("base")
+  network       Network   @default(TESTNET)
+  
+  // Project Files (JSON blob for MVP, could be separate table later)
+  files         Json      @default("{}")
+  
+  // Relations
+  wallet        ProjectWallet?
+  contracts     DeployedContract[]
+  messages      ChatMessage[]
+  
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+  
+  @@index([userId])
+}
+
+enum Network {
+  MAINNET
+  TESTNET
+}
+
+model ProjectWallet {
+  id                  String    @id @default(cuid())
+  
+  // Project relation (1:1)
+  projectId           String    @unique
+  project             Project   @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  
+  // Wallet data
+  address             String
+  encryptedPrivateKey String    // Encrypted with KMS
+  chain               String
+  
+  createdAt           DateTime  @default(now())
+  
+  @@index([address])
+}
+
+model DeployedContract {
+  id            String    @id @default(cuid())
+  
+  // Project relation
+  projectId     String
+  project       Project   @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  
+  // Contract info
+  address       String
+  name          String
+  type          ContractType
+  chain         String
+  network       Network
+  
+  // Deployment info
+  transactionHash String?
+  verified      Boolean   @default(false)
+  
+  // Constructor args (for verification)
+  constructorArgs Json?
+  
+  createdAt     DateTime  @default(now())
+  
+  @@index([projectId])
+  @@index([address])
+}
+
+enum ContractType {
+  ERC20
+  ERC721
+  ERC1155
+  NFT_DROP
+  MARKETPLACE
+  CUSTOM
+}
+
+model ChatMessage {
+  id            String    @id @default(cuid())
+  
+  // Project relation
+  projectId     String
+  project       Project   @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  
+  // Message content
+  role          MessageRole
+  content       String    @db.Text
+  
+  // Tool calls made in this message
+  toolCalls     Json?
+  
+  createdAt     DateTime  @default(now())
+  
+  @@index([projectId])
+}
+
+enum MessageRole {
+  USER
+  ASSISTANT
+  SYSTEM
+}
