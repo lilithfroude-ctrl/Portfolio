@@ -1,2 +1,2 @@
 # Portfolio
-Portfolio showcasing ML pipelines, interactive dashboards, and full-stack apps. Featured: Protein structure prediction with BiLSTM (72% accuracy), Sky Harbor Airport visualization, blockchain ticketing system. Python | SQL | React | Tableau
+ML Engineer & Data Scientist portfolio | End-to-end pipelines with neural networks, ensemble methods & anomaly detection | Interactive dashboards | Full-stack SaaS | Python, TensorFlow, scikit-learn, SQL, React, Tableau
