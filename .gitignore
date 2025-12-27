@@ -1,3 +1,4 @@
 *.twbx
 .vscode/
 *.json
+.DS_Store
