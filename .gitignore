@@ -1,6 +1,5 @@
-*.twbx
 .vscode/
 *.json
 .DS_Store
-.DS_Store
 *.DS_Store
+Tableau/FlightDelaysDashboard_LilithFroude.twbx
