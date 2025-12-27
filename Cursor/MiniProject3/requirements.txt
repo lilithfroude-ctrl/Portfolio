@@ -1,0 +1,9 @@
+pandas
+matplotlib
+pillow
+imageio
+openpyxl
+numpy
+streamlit
+plotly
+
