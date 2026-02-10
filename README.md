@@ -8,19 +8,19 @@ I build intelligent systems that turn complex data into actionable insights. Wit
 Currently pursuing my MS in AI in Business at Arizona State University, I bring a unique perspective to technical problems—combining rigorous machine learning methodology with clear communication tailored to stakeholders, whether they're executives, engineers, or end-users.
 
 ## Core Competencies
-DomainTechnologiesMachine LearningPython, TensorFlow/Keras, scikit-learn, BiLSTM, Random Forest, Isolation Forest, K-MeansData VisualizationTableau, Streamlit, Plotly, Matplotlib, SeabornFull-Stack DevelopmentReact, TypeScript, Next.js, Node.js, PostgreSQL, SupabaseBlockchain/Web3Solidity, Smart Contracts, BASE/Ethereum L2, ERC-721Data EngineeringSQL, Pandas, NumPy, ETL Pipelines, Feature Engineering
+Python, TensorFlow/Keras, scikit-learn, BiLSTM, Random Forest, Isolation Forest, K-MeansData, Tableau, Streamlit, Plotly, Matplotlib, Seaborn, Full-Stack Development, React, TypeScript, Next.js, Node.js, PostgreSQL, Blockchain/Web3, Smart Contracts, SQL, Pandas, NumPy, Data Pipelines, Feature Engineering, NLP
 
 # Featured Projects
 ## 🧬 Protein Structure Prediction System
 Multi-Model ML Pipeline for Drug Discovery
 Built an end-to-end computational triage system using three models selected for distinct prediction tasks:
 
-BiLSTM Neural Network → Secondary structure prediction (71.98% Q3 accuracy)
-Random Forest Classifier → Protein stability classification (60% accuracy, 0.611 AUC-ROC)
-Isolation Forest → Anomaly detection flagging ~5% structural outliers
+BiLSTM Neural Network → Secondary structure prediction
+Random Forest Classifier → Protein stability classification
+Isolation Forest → Anomaly detection
 
 Impact: Reduces initial drug candidate screening from 6-18 months to minutes, with potential cost savings of $100K-$500K per structure.
-Python TensorFlow/Keras scikit-learn Pandas PISCES Dataset
+Python, TensorFlow/Keras, scikit-learn, Pandas
 
 ## 🚗 Sky Harbor Airport Ride-Hailing Dashboard
 Real-Time Interactive Data Visualization
@@ -29,34 +29,33 @@ Developed a Streamlit-based dashboard visualizing ride-hailing activity at Phoen
 Service-specific color coding (Uber, Lyft, Waymo, Taxi)
 Dynamic statistics panels with real-time filtering
 Animated 60-frame visualization showing temporal patterns
-Geospatial mapping with Mapbox integration
 
-Techniques: Time-series analysis, geospatial visualization, animation generation
-Python Streamlit Tableau Matplotlib Mapbox
+Techniques: Time-series analysis, visualization, animation generation,
+Python, Streamlit, Tableau, Matplotlib
 
 ## 💳 CommunityTap – Full-Stack SaaS Platform
 Hyper-Local Crowdfunding Application
 Architected and built a complete crowdfunding platform in a 48-hour sprint, demonstrating rapid prototyping and full-stack capabilities.
 
 PostgreSQL schema with 8+ tables and Row-Level Security
-10+ Supabase Edge Functions for payment processing and automation
+Edge Functions for payment processing and automation
 Third-party integrations: Stripe Connect, Mapbox, Resend
 
-React TypeScript Supabase PostgreSQL Stripe API
+React, TypeScript, PostgreSQL, Stripe API, Mapbox API
 
 ## 🎫 CrowdCtrl – Blockchain Ticketing System
 Decentralized Event Management Platform
 Designed a Web3 ticketing solution using NFT technology to combat fraud and enable transparent resale markets.
 
-ERC-721 NFT tickets with automated royalty distribution (EIP-2981)
+ERC-721 NFT tickets with automated royalty distribution
 Smart contracts enforcing resale price ceilings and transfer restrictions
 2nd Place – GVSU DEMO Day Pitch Competition
 
-Solidity BASE/Ethereum L2 Next.js Smart Contracts
+Solidity, BASE/Ethereum L2, Next.js, Smart Contracts
 
 ## Tableau Visualization Projects
 Interactive dashboards demonstrating business intelligence across multiple domains:
-ProjectDomainKey TechniquesCTA Transit AnalysisTransportationGeospatial mapping, route visualization, temporal analysisNBA AnalyticsSportsKPI dashboards, calculated fields, parameter actionsHousing AffordabilityReal EstateHeat maps, economic indicators, trend analysiseBay Auction AnalyticsE-CommercePrice distribution, categorical comparisons, scatter plotsAPI Providers ComparisonTechnologyCompetitive analysis, decision matricesClass Profile DashboardEducationDemographic profiling, cohort analysis
+Dashboards, calculated fields, parameters, Heat maps, trend analysis, categorical comparisons, scatter plots, Competitive analysis
 
 ## Technical Philosophy
 I believe the best data solutions are audience-aware:
