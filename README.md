@@ -11,7 +11,7 @@ Currently pursuing my MS in AI in Business at Arizona State University, I bring 
 Python, TensorFlow/Keras, scikit-learn, BiLSTM, Random Forest, Isolation Forest, K-MeansData, Tableau, Streamlit, Plotly, Matplotlib, Seaborn, Full-Stack Development, React, TypeScript, Next.js, Node.js, PostgreSQL, Blockchain/Web3, Smart Contracts, SQL, Pandas, NumPy, Data Pipelines, Feature Engineering, NLP
 
 # Featured Projects
-## 🧬 Protein Structure Prediction System
+## 🧬 Machine Learning Protein Prediction Pipeline
 Multi-Model ML Pipeline for Drug Discovery
 Built an end-to-end computational triage system using three models selected for distinct prediction tasks:
 
