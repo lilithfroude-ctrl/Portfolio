@@ -22,6 +22,18 @@ Isolation Forest → Anomaly detection
 Impact: Reduces initial drug candidate screening from 6-18 months to minutes, with potential cost savings of $100K-$500K per structure.
 Python, TensorFlow/Keras, scikit-learn, Pandas
 
+## 🐾 Pet-Friendly Arizona Venue Recommendation System
+Built an end-to-end NLP pipeline that goes beyond Yelp's binary "pet-friendly" label to surface the actual quality of pet experiences at Arizona venues. The system analyzes 4,577 reviews across 422 businesses using a four-stage pipeline:
+
+1. **Text Preprocessing** → spaCy lemmatization + rule-based extraction to flag 10 binary pet features (patio, shade, fencing, water, safety, etc.)
+2. **Topic Modeling** → BERTopic (SentenceTransformer + UMAP + HDBSCAN) discovered 34 distinct topics across the review corpus, revealing clear rating-driven patterns in how customers describe pet-friendly venues.
+3. **Multi-Label Classification** → Compared Logistic Regression, Linear SVM, and Random Forest on the pet feature classification task. Linear SVM achieved the best Macro F1 of 0.1635 — low due to severe class imbalance (under 5% of reviews contain explicit pet language), but the composite scoring engine compensates by weighting learnable features more heavily.
+4. **Composite Scoring Engine** → Ranked 269 venues across four weighted dimensions: NLP-detected features (40%), VADER sentiment (35%), BERTopic relevance (15%), and Yelp star ratings (10%).
+
+**Key insight:** Top-ranked venues cluster at low review counts — venues with fewer but more concentrated pet-specific reviews outperform high-volume venues where pet language gets diluted.
+
+Python, spaCy, BERTopic, VADER, scikit-learn, UMAP, HDBSCAN, Pandas, Matplotlib
+
 ## 🚗 Sky Harbor Airport Ride-Hailing Dashboard
 Real-Time Interactive Data Visualization
 Developed a Streamlit-based dashboard visualizing ride-hailing activity at Phoenix Sky Harbor Airport's pickup zones.
