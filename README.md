@@ -11,6 +11,15 @@ Currently pursuing my MS in AI in Business at Arizona State University, I bring 
 Python, TensorFlow/Keras, scikit-learn, BiLSTM, Random Forest, Isolation Forest, K-MeansData, Tableau, Streamlit, Plotly, Matplotlib, Seaborn, Full-Stack Development, React, TypeScript, Next.js, Node.js, PostgreSQL, Blockchain/Web3, Smart Contracts, SQL, Pandas, NumPy, Data Pipelines, Feature Engineering, NLP
 
 # Featured Projects
+
+## Multi-Agent Systems & Agentic AI
+
+Design and architecture work for a **CrewAI** multi-agent pipeline that turns chat history into sitter retention intelligence: a five-agent crew (Supervisor, Data Collector, Perception, Reasoning, Reporter) ingests conversation data, scores surface and deep sentiment (VADER, HuggingFace, LangChain RAG over FAISS), and produces churn risk plus personalized outreach. The write-up covers agent roles, standard vs. custom tools, and open-source LLM choices (e.g. Llama 3.1, Mistral, Qwen2.5) for real chat signal.
+
+**Deliverable:** [Agentic Sentiment — Babysitter Churn Detection Workflow (PDF)](Agentic_AI/agentic_sentiment_babysitter.pdf)
+
+CrewAI, LangChain, open-source LLMs, NLP, RAG, sentiment analysis
+
 ## 🧬 Machine Learning Protein Prediction Pipeline
 Multi-Model ML Pipeline for Drug Discovery
 Built an end-to-end computational triage system using three models selected for distinct prediction tasks:
