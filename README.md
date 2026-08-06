@@ -5,7 +5,7 @@ ML Engineer • Data Scientist • Full-Stack Developer
 
 ## About Me
 I build intelligent systems that turn complex data into actionable insights. With a background bridging business strategy and technical implementation, I specialize in translating data science solutions into real-world business value.
-Currently pursuing my MS in AI in Business at Arizona State University, I bring a unique perspective to technical problems—combining rigorous machine learning methodology with clear communication tailored to stakeholders, whether they're executives, engineers, or end-users.
+Completed my MS in AI in Business at Arizona State University, I bring a unique perspective to technical problems—combining rigorous machine learning methodology with clear communication tailored to stakeholders, whether they're executives, engineers, or end-users.
 
 ## Core Competencies
 Python, TensorFlow/Keras, scikit-learn, BiLSTM, Random Forest, Isolation Forest, K-MeansData, Tableau, Streamlit, Plotly, Matplotlib, Seaborn, Full-Stack Development, React, TypeScript, Next.js, Node.js, PostgreSQL, Blockchain/Web3, Smart Contracts, SQL, Pandas, NumPy, Data Pipelines, Feature Engineering, NLP
