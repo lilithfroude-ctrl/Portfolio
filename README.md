@@ -88,7 +88,7 @@ For End-Users: Intuitive interfaces that surface insights without requiring tech
 This portfolio demonstrates my ability to work across the entire data lifecycle—from raw data ingestion to production deployment—while adapting my communication style to the audience at hand.
 
 ## Education
-Master of Science in AI in Business | Arizona State University | Expected Spring 2026
+Master of Science in AI in Business | Arizona State University | 2026
 Bachelor of Business Administration | Grand Valley State University | 2023
 Majors: Marketing, Entrepreneurship | Minor: Digital Studies
 
